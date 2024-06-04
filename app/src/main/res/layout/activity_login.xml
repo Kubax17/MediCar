@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+
+    android:background="@drawable/background_color"
+    tools:context=".LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/login_main_text"
+            style="@style/AutoServiceAppStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:padding="5dp"
+
+            android:text="@string/signin"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/username_login"
+            />
+
+        <TextView
+            android:id="@+id/signup_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:text="@string/dont_have_account"
+            style="@style/AutoServiceAppStyle"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/forgot_password"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <!--        do sprawdzania listy użytkowników -->
+        <TextView
+            android:id="@+id/show_users_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:padding="8dp"
+            android:text="Show users list"
+            style="@style/AutoServiceAppStyle"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/signup_reg"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <EditText
+            android:id="@+id/password_login"
+            style="@style/AutoServiceAppStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittext_background"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:autofillHints="password"
+            android:padding="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btn_login"
+            app:layout_constraintTop_toBottomOf="@id/username_login"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            style="@style/AutoServiceAppStyle"
+            android:layout_width="300dp"
+            android:layout_height="53dp"
+            android:layout_margin="30dp"
+            android:background="@drawable/btn_grad_color"
+            android:gravity="center"
+            android:textSize="17sp"
+
+            android:text="@string/login"
+            android:textAppearance="?android:textAppearanceMedium"
+            app:layout_constraintBottom_toTopOf="@id/forgot_password"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/password_login">
+
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <EditText
+            android:id="@+id/username_login"
+            style="@style/AutoServiceAppStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:inputType="textPersonName|textEmailAddress"
+            android:background="@drawable/edittext_background"
+            android:fontFamily="@font/numans"
+            android:hint="@string/username"
+            android:padding="15dp"
+            android:textSize="17sp"
+            android:autofillHints="emailAddress|name"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/login_main_text"
+            app:layout_constraintBottom_toTopOf="@id/password_login"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <TextView
+            style="@style/AutoServiceAppStyle"
+            android:id="@+id/forgot_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:padding="5dp"
+            android:text="@string/forgot_password"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/btn_login"
+            app:layout_constraintBottom_toTopOf="@id/signup_reg"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

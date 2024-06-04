@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+
+    android:background="@drawable/background_color"
+    tools:context=".LoginActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/registration_activity"
+            style="@style/AutoServiceAppStyle"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/username_reg"
+            android:layout_marginBottom="18dp"
+            android:textStyle="bold"
+            android:textSize="25sp">
+
+        </TextView>
+
+
+        <EditText
+            android:id="@+id/username_reg"
+            style="@style/AutoServiceAppStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittext_background"
+            android:textSize="17sp"
+            android:hint="@string/username"
+            android:padding="15dp"
+            android:autofillHints="emailAddress|name"
+            android:inputType="textPersonName|textEmailAddress"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@id/password_reg"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="1.0" />
+
+        <EditText
+            android:id="@+id/password_reg"
+            style="@style/AutoServiceAppStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edittext_background"
+            android:hint="@string/password"
+            android:textSize="17sp"
+            android:padding="15dp"
+            android:inputType="textPassword"
+            android:autofillHints="password"
+            app:layout_constraintBottom_toTopOf="@id/register_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/username_reg" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/register_button"
+            style="@style/AutoServiceAppStyle"
+            android:layout_width="300dp"
+            android:layout_height="53dp"
+
+            android:background="@drawable/btn_grad_color"
+            android:text="@string/register_button"
+            android:textAppearance="?android:textAppearanceMedium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="17sp"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+
+
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/password_reg" />
+
+        <TextView
+            android:id="@+id/already_have_account"
+            style="@style/AutoServiceAppStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/already_have_account"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="17sp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/register_button"
+            >
+
+
+        </TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

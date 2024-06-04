@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".PaymentActivity">
+
+    <TextView
+        android:id="@+id/payment_methods_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Payment Method"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"/>
+
+    <ImageButton
+        android:id="@+id/payment_blik"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/blik"
+        android:contentDescription="Pay with BLIK"
+        app:layout_constraintTop_toBottomOf="@id/payment_methods_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+    <ImageButton
+        android:id="@+id/payment_bank"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/bankpekao"
+        android:contentDescription="Pay with Bank"
+        app:layout_constraintTop_toBottomOf="@id/payment_blik"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+    <ImageButton
+        android:id="@+id/payment_visa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/visa"
+        android:contentDescription="Pay with Visa"
+        app:layout_constraintTop_toBottomOf="@id/payment_bank"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+    <ImageButton
+        android:id="@+id/payment_google_pay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/googlepay"
+        android:contentDescription="Pay with Google Pay"
+        app:layout_constraintTop_toBottomOf="@id/payment_visa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

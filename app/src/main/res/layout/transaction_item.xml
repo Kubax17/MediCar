@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="8dp"
+    tools:ignore="MissingDefaultResource">
+    <RelativeLayout
+        android:background="@drawable/background_color"
+        android:id="@+id/transaction_row"
+        android:padding="12dp"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/text_view_tTitle"
+            android:layout_width="wrap_content"
+            android:layout_alignParentStart = "true"
+            android:text="Title"
+            style="@style/AutoServiceAppStyle"
+            android:textSize="15sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/text_view_tPrice"
+            android:layout_width="wrap_content"
+            android:layout_toStartOf="@id/text_view_tTitle"
+            android:layout_alignParentEnd="true"
+            android:text="21.37"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:maxLines="1"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            style="@style/AutoServiceAppStyle"/>
+        <TextView
+            android:id="@+id/text_view_tType"
+            android:layout_width="wrap_content"
+            android:layout_toStartOf="@id/text_view_tTitle"
+            android:layout_below="@id/text_view_tPrice"
+            android:layout_alignParentEnd="true"
+            android:text="Food and Beverage"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:maxLines="1"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            style="@style/AutoServiceAppStyle"/>
+        <TextView
+            android:id="@+id/text_view_tDate"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/text_view_tType"
+            android:text="2-05-2005"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:layout_toStartOf="@id/text_view_tType"
+            android:maxLines="1"
+            android:textSize="15sp"
+            android:layout_alignParentEnd="true"
+            android:layout_height="wrap_content"
+            style="@style/AutoServiceAppStyle"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

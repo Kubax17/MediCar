@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <item android:id="@+id/calendar"
+        android:enabled="true"
+        android:title="@string/switch_to_calendar"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/to_calendar"/>
+    <item android:id="@+id/add_action"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:title="@string/add_action"
+        android:icon="@drawable/add_expense"/>
+
+    <item android:id="@+id/payments"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:title="@string/payment"
+        android:icon="@drawable/payments"/>
+
+    <item android:id="@+id/transaction_history"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:title="@string/transaction_history"
+        android:icon="@drawable/transaction_history"/>
+</menu>

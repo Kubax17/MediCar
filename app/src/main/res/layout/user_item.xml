@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="8dp"
+
+    >
+
+
+    <RelativeLayout
+        android:background="@drawable/background_color"
+        android:id="@+id/user_row"
+        android:padding="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/text_view_uid"
+            android:layout_width="wrap_content"
+            android:layout_alignParentStart = "true"
+            android:text="1"
+            style="@style/AutoServiceAppStyle"
+            android:textSize="20sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/text_view_username"
+            android:layout_width="wrap_content"
+            android:layout_toStartOf="@id/text_view_uid"
+            android:layout_alignParentEnd="true"
+            android:text="Jakub"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:maxLines="1"
+            android:layout_height="wrap_content"
+            style="@style/AutoServiceAppStyle"/>
+        <TextView
+            android:id="@+id/text_view_password"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/text_view_username"
+            android:text="password"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:layout_toStartOf="@id/text_view_username"
+            android:maxLines="1"
+            android:layout_alignParentEnd="true"
+            android:layout_height="wrap_content"
+            style="@style/AutoServiceAppStyle"/>
+
+    </RelativeLayout>
+</FrameLayout>

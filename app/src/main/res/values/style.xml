@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AutoServiceAppStyle" parent="TextAppearance.AppCompat">
+
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:fontFamily">@font/numans</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textColorLink">@color/text_highlight_color</item>
+        <item name="android:textColorHighlight">@color/text_highlight_color</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+
+</resources>
+
+

@@ -6,5 +6,34 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="gradient_first_color">#D006A8F1</color>
+    <color name="gradient_second_color">#0235EF</color>
+
+    <color name="edittext_login_first_color">#40C4FF</color>
+    <color name="edittext_login_second_color">#8E24AA</color>
+
+    <color name="btn_color1">#304FFE</color>
+    <color name="btn_color2">#C6206407</color>
+
+    <color name="home_bottomMenu1">#D076D0F8</color>
+    <color name="home_bottomMenu2">#D076D0F8</color>
+    <color name="text_highlight_color">#0A94FE</color>
+
+    <color name="icon_bottom_bar">#C51162</color>
+    <color name="icon_bottom_bar_selected">#8A00A1</color>
+
+
+    <color name="cardview_budget_expense_color">#D076D0F8</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+
+
+    <color name="edittext_nav">#D5FFFF00</color>
+
+    <color name="navbar_color_theme">#D00F9FDF</color>
 </resources>

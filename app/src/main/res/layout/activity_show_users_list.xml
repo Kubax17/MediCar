@@ -1,0 +1,21 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ShowUsersListActivity"
+    android:background="@drawable/home_bottom_menu_background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/user_recycler_view"
+        style="@style/AutoServiceAppStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        tools:listitem="@layout/user_item" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
