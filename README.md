@@ -3,6 +3,7 @@ Introduction:
 The MediCar mobile application is designed to enhance the healthcare experience by providing a user-friendly interface and essential features. Developed using Android Studio, it incorporates various elements such as a drawer menu, bottom menu, user authentication screens, a main view, a calendar window, a customer feedback section, and settings. The application utilizes Room database for local data management, ensuring smooth and efficient data handling.
 
 Key Features:
+
 Drawer Menu and Bottom Menu:
 The application features a drawer menu for easy navigation between different sections of the app. The bottom menu provides quick access to key functionalities such as Home, Calendar, Feedback, and Settings.
 
@@ -25,6 +26,7 @@ Settings Window:
 The settings window offers users the ability to customize their preferences, including language settings and app configurations. It is designed to be easily navigable, with all options clearly presented.
 
 Technical Architecture:
+
 Room Database:
 The application utilizes Room database to handle local data storage. This includes tables for user information, appointment details, feedback, and settings.
 
@@ -35,5 +37,6 @@ UI Components:
 The application employs various UI components such as EditTexts, Buttons, RecyclerViews, and Dialogs to enhance user interaction and engagement.
 
 Development Tools:
+
 Android Studio: Used as the primary development environment, Android Studio provides tools and features necessary for building and debugging the application.
 Kotlin Programming Language: The application is developed using Kotlin, leveraging its concise syntax and powerful features for modern Android development.
