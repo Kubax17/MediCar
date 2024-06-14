@@ -10,6 +10,7 @@
 
     <color name="gradient_first_color">#D006A8F1</color>
     <color name="gradient_second_color">#0235EF</color>
+    <color name="gradient_third_color">#889ADD</color>
 
     <color name="edittext_login_first_color">#40C4FF</color>
     <color name="edittext_login_second_color">#8E24AA</color>

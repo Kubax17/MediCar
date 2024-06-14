@@ -142,7 +142,6 @@ class HomeActivity : AppCompatActivity(){
                     true
                 }
                 R.id.calendar -> {
-                    // Handle calendar
                     val intent = Intent(this, CalendarActivity::class.java)
                     startActivity(intent)
                     true

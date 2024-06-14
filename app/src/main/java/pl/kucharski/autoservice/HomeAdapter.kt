@@ -56,9 +56,17 @@ class HomeAdapter :  RecyclerView.Adapter<HomeAdapter.ViewHolder>
                     activity.startActivity(Intent(activity, UserPreferencesActivity::class.java )
                         .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
                 "Settings"->
-                    TODO()
+                {
+                    val intent = Intent(activity, SettingsActivity::class.java)
+                    .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                activity.startActivity(intent)
+            }
                 "About"->
-                    TODO()
+                {
+                    val intent = Intent(activity, OpinionsActivity::class.java)
+                        .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                    activity.startActivity(intent)
+                }
                 "Logout"-> {
 
                     val loginIntent = Intent(activity, LoginActivity::class.java)
