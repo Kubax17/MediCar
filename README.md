@@ -39,4 +39,5 @@ The application employs various UI components such as EditTexts, Buttons, Recycl
 Development Tools:
 
 Android Studio: Used as the primary development environment, Android Studio provides tools and features necessary for building and debugging the application.
+
 Kotlin Programming Language: The application is developed using Kotlin, leveraging its concise syntax and powerful features for modern Android development.
