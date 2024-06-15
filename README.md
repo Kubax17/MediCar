@@ -1,6 +1,6 @@
 MediCar Mobile Application Overview
 Introduction:
-The MediCar mobile application is designed to enhance the healthcare experience by providing a user-friendly interface and essential features. Developed using Android Studio, it incorporates various elements such as a drawer menu, bottom menu, user authentication screens, a main view, a calendar window, a customer feedback section, and settings. The application utilizes Room database for local data management, ensuring smooth and efficient data handling.
+The MediCar mobile application aims to improve the quality of motor vehicles by providing a user-friendly interface and necessary functions. Developed using Android Studio, it incorporates various elements such as a drawer menu, bottom menu, user authentication screens, a main view, a calendar window, a customer feedback section, and settings. The application utilizes Room database for local data management, ensuring smooth and efficient data handling.
 
 Key Features:
 
